@@ -12,7 +12,6 @@ app.post('/',(req, res)=>{
     console.log("Output");
     var height = Number(req.body.height);
     var weight = Number(req.body.weight);
-    res.write("Hello");
     res.send("Your Bmi is "+(weight/(height*height)));
     // console.log(Number(req.body.height) +Number(req.body.weight));
     // res.send("Value "+ (Number(req.body.height) +Number(req.body.weight)))
